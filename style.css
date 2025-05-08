@@ -1,0 +1,398 @@
+
+.center-text {
+    text-align: center;
+  }
+  
+.centered-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 130vh; 
+    text-align: center;
+  }
+  
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  
+  body {
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    color: #333;
+    background-color: #fff; 
+    line-height: 1.6;
+  }
+  /*.outfit-body {
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+  }*/
+  
+  a {
+    text-decoration: none;
+    color: inherit;
+    transition: color 0.2s ease-in-out;
+  }
+  
+  a:hover {
+    color: #d0502d; 
+  }
+  
+  header {
+    background-color: #ffefdc;
+    padding: 1rem 2rem;
+  }
+  
+  header .logo {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #d0502d; 
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+  }
+  
+  nav ul li {
+    margin-left: auto; 
+  }
+  
+  nav a {
+    font-weight: bold;
+    color: #333;
+  }
+  
+  header, nav, footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+ 
+  .hero {
+    position: relative;
+    width: 100%;
+    height: 70vh;
+    overflow: hidden;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    text-align: left;
+    padding-left: 70px;
+    color: white;
+    transition: 0.5s ease;
+}
+
+/* Overlay and zoom effect. watev*/
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(98, 78, 48, 0.626), rgba(0, 0, 0, 0.5)),
+                url('Filipino.jpg') center/cover no-repeat;
+    z-index: -1;
+    transition: 4.5s ease;
+    transform: scale(1.2);
+}
+
+.hero:hover {
+    height: 86vh; 
+}
+
+.hero:hover::before {
+    transform: scale(1);
+}
+  
+  
+  .hero h1 {
+    font-size: 4rem;
+    text-align: left;
+    color: #fff;
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);  
+ 
+  }
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 2em;
+  }
+  .values-section {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px auto;
+    max-width: 800px;
+    text-align: left; 
+  }
+  
+  .values-section h2 {
+    color: #333;
+    text-align: center;
+  }
+  
+  .values-section ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .values-section li {
+    margin-bottom: 10px;
+  }
+  
+  .values-section .checkmark {
+    color: green;
+  }
+  
+  
+  main {
+    padding: 2rem;
+  }
+  
+  
+  section {
+    margin-bottom: 2rem;
+  }
+  
+  footer {
+    background-color: #ffefdc;
+    padding: 1rem 2rem;
+    justify-content: center;
+  }
+  
+  footer p {
+    color: #777;
+  }
+  
+ 
+  .btn {
+    background-color: #d0502d;
+    color: #fff;
+    padding: 0.7rem 1.2rem;
+    border: none;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn:hover {
+    background-color: #823923;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+  }
+  
+  label {
+    margin: 0.5rem 0 0.2rem;
+    font-weight: bold;
+  }
+  
+  input[type="text"],
+  input[type="date"],
+  input[type="email"],
+  select,
+  textarea {
+    padding: 0.7rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  input[type="submit"],
+  button[type="submit"] {
+    background-color: #d0502d;
+    color: #fff;
+    padding: 0.7rem 1.2rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  input[type="submit"]:hover,
+  button[type="submit"]:hover {
+    background-color: #b1401e;
+  }
+  
+ul {
+    list-style: none; 
+    padding: 0;
+  }
+  
+  li {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 10px;
+  }
+
+
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    justify-items: center;
+  }
+  
+  
+  .menu-card {
+    text-align: center;
+    width: 100%;
+    max-width: 350px;
+  }
+  
+ 
+  .menu-img {
+    position: relative;
+    width: 100%;
+    height: 350px; 
+    background-size: cover;
+    background-position: center;
+    border-radius: 8px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 200ms ease-in-out;
+  }
+  
+  
+  .menu-img h3 {
+    position: absolute;
+    background: rgba(0, 0, 0, 0.148);
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 1.5rem;
+    border-radius: 5px;
+    text-align: left; 
+    bottom: 10px;   
+    left: 10px;
+  }
+  
+  .menu-card p {
+    font-size: 1rem;
+    color: #333;
+    margin-top: 10px;
+    padding: 0 10px;
+  }
+
+  .menu-img:hover{
+    transform: scale(1.05);
+    filter: drop-shadow(0px 0px 5px rgb(0, 0, 0));
+    transition: all 200ms ease-in-out 100ms;
+} 
+
+  
+ 
+  .sisig-wraps { background-image: url('sisig-wraps.jpg'); }
+  .spring-rolls { background-image: url('https://omnivorescookbook.com/wp-content/uploads/2020/12/201113_Lumpia-Shanghai_1.jpg'); }
+  .okoy { background-image: url('https://www.cookmunitybyajinomoto.com/wp-content/uploads/2021/12/Vegetable-Okoy-Op2-1.jpg'); }
+  .ubecheese { background-image: url('https://thefrenchbakeronline.com/cdn/shop/products/9_grande.jpg?v=1590296125'); }
+  .kare-kare { background-image: url('kare-kare.jpg'); }
+  .crispy-pata { background-image: url('https://upload.wikimedia.org/wikipedia/commons/2/2a/Crispy_Pata_Pork.jpg'); }
+  .grilled-tuna { background-image: url('https://i.pinimg.com/736x/1f/14/24/1f142412b83b98c7afa7c49629d24ce4.jpg'); }
+  .Dinakdakan { background-image: url('https://www.unileverfoodsolutions.com.ph/dam/global-ufs/mcos/SEA/calcmenu/recipes/PH-recipes/red-meats-&-red-meat-dishes/dinakdakan-crispy-pata/dinakdakan-crispy-pata-main.jpg');}
+  .sinigang { background-image: url('https://speedyrecipe.com/wp-content/uploads/2022/09/how-to-cook-sinigang-na-baboy.jpg'); }
+  .giniling { background-image: url('https://www.cookmunitybyajinomoto.com/wp-content/uploads/2021/07/PORK-GINILING-scaled.jpeg'); }
+  .pinakbet { background-image: url('https://www.maggi.ph/sites/default/files/styles/home_stage_944_531/public/srh_recipes/7b2444c2b4241d57e7371b6d37ab0b0a.jpg?h=6f0927de&itok=nLEgDc92'); }
+  .ginataang-hipon  { background-image: url('https://i.ytimg.com/vi/k0dZcRyForQ/maxresdefault.jpg'); }
+  .halo-halo { background-image: url('https://flouredframe.com/wp-content/uploads/2024/07/vegan-halo-halo-process-4.jpg'); }
+  .leche-flan { background-image: url('https://bitesbybianca.com/wp-content/uploads/2024/12/filipino-leche-flan-cover-1.jpg'); }
+  .buko-pandan { background-image: url('https://www.shutterstock.com/image-photo/buko-pandan-salad-filipino-made-600nw-1966207015.jpg'); }
+  .turon { background-image: url('https://i.pinimg.com/736x/45/d9/b8/45d9b81f8a372a325e6fa28bad34d098.jpg'); }
+  
+  .reservation {
+    text-align: center;
+  }
+
+ 
+ /* Base Cart Container */
+#cart-container {
+  position: fixed; /*changed from absolute to fixed so it can hover through out the page buttttt its kind of glitchy when it accidently highlights a text*/
+  bottom: 10px;
+  right: 10px;
+  background: white;
+  padding: 10px;
+  border: 1px solid #ddd;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  width: 280px;
+  z-index: auto;
+  font-family: "Outfit", sans-serif;
+  border-radius: 10px;
+  max-height: 40vh;
+  overflow-y: auto;
+}
+
+
+/* Cart Items */
+#cart-items li {
+  margin-bottom: 8px;
+}
+
+
+/* Cart Header */
+#cart-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  background: #f9f9f9;
+  padding: 8px 10px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+
+/* Toggle Button */
+#toggle-cart {
+  background: none;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+
+/* Hide content when minimized */
+.hidden {
+  display: none;
+}
+
+
+/* Buttons inside the cart */
+button {
+  cursor: pointer;
+  margin-left: 5px;
+  padding: 3px 7px;
+  border: none;
+  background: #f44336;
+  color: white;
+  border-radius: 5px;
+}
+
+
+button:hover {
+  background: #c9b4b4;
+}

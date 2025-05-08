@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>HIRAYA - Reservations</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <header>
+    <div class="logo">HIRAYA</div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="reservations.html">Reservations</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="centered-form">
+    <h1>Reserve a Table</h1>
+    <form action="#" method="post">
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="date">Date</label>
+      <input type="date" id="date" name="date" required>
+
+      <label for="time">Preferred Reservation Time</label>
+<input type="time" id="time" name="time" required>
+
+      </select>
+
+      <label for="guests">Number of Guests</label>
+      <input type="text" id="guests" name="guests" placeholder="e.g. 2, 4, 10" required>
+
+      <label for="requests">Special Requests</label>
+      <textarea id="requests" name="requests" rows="4" placeholder="Allergies, celebrations, etc."></textarea>
+
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" required>
+        <label class="form-check-label" for="flexCheckDefault">
+          I consent to share my contact information for communication and updates.
+        </label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked required>
+        <label class="form-check-label" for="flexCheckChecked">
+          I understand my information may be shared with third parties for marketing and support purposes and will be protected accordingly.
+        </label>
+      </div>
+
+      <input type="submit" value="Book Now">
+    </form>
+</main>
+
+
+
+  <footer>
+    <p>&copy; 2025 HIRAYA. All Rights Reserved.</p>
+  </footer>
+
+</body>
+</html>
